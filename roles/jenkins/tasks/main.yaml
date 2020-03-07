@@ -1,0 +1,7 @@
+---
+  - name: build jenkins image
+    docker_image:
+      name: jenkins:custom
+      #build:
+      path: roles/jenkins/files
+        #source: build

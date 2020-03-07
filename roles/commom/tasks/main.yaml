@@ -1,0 +1,5 @@
+---
+  - name: Create jenkins folder
+    file:
+      path: /home/jenkins
+      state: directory

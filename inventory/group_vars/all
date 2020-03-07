@@ -1,0 +1,6 @@
+---
+  ansible_python_interpreter: "/usr/bin/python3"
+  create_containers: 1
+  default_container_name: docker
+  default_container_image: ubuntu
+  default_container_command: sleep 1d

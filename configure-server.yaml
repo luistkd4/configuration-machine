@@ -1,0 +1,12 @@
+---
+ - hosts: [node-server]
+   connection: local
+    #become: true
+   roles: [docker]
+   name: Instalar docker
+
+ - hosts: [node-server]
+   connection: local
+   roles: [proxy]
+   name: Configurar proxy
+

@@ -3,3 +3,10 @@
     file:
       path: /home/jenkins
       state: directory
+
+  - name: Get procs
+    shell: "nproc"
+    register: nproc
+
+  - name: Set env proc
+    shell: echo PROC={{ nproc.stdout  }} >> /etc/environment
